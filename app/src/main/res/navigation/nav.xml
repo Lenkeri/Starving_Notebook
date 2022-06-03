@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/notesFragment">
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.starvingnotebook.NotesFragment"
+tools:layout="@layout/fragment_notes"
+        android:label="NotesFragment" />
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.example.starvingnotebook.SetupFragment"
+        tools:layout="@layout/fragment_setup"
+        android:label="SetupFragment" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.starvingnotebook.StatisticsFragment"
+        tools:layout="@layout/fragment_statistics"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/generateNotesFragment"
+        android:name="com.example.starvingnotebook.generateNotesFragment"
+        android:label="fragment_generate_notes"
+        tools:layout="@layout/fragment_add_notes" />
+
+</navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            app:type="one_day_picker"
+            app:eventsEnabled="true"
+            app:headerColor="@color/primary_green_base"
+            app:selectionColor="@color/secondary_orange_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
